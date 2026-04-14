@@ -14,7 +14,7 @@ st.set_page_config(
 )# 2. Phir model load karo (Iske baad)-----------------------------------------------------------
 @st.cache_resource
 def load_sentinel_model():
-    return tf.keras.models.load_model('deepfake_model_FINAL.h5')
+    return tf.keras.models.load_model('deepfake_model_FINAL.h5', compile=False)
 
 model = load_sentinel_model()
 
