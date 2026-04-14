@@ -1,8 +1,10 @@
+import os
+os.environ['TF_USE_LEGACY_KERAS'] = '1' 
 import streamlit as st
 from PIL import Image
-import tensorflow as tf   # <--- Ye miss ho gaya tha
-import numpy as np        # <--- Isliye red aa raha hai
-import random             # <--- Chhota 'r' hona chahiye
+import tensorflow as tf 
+import numpy as np        
+import random             
 import time
 
 # ── Page config ───────── # 1. Sabse pehle config (Line 9 se 15 tak ye rakho)
